@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/user"
+        android:layout_width="410dp"
+        android:layout_height="892dp"
+        android:clipToOutline="true"
+        tools:ignore="MissingConstraints,RedundantNamespace,UnusedAttribute"
+        android:background="@drawable/gradient">
+
+        <ImageButton
+            android:id="@+id/back_home"
+            android:layout_width="15dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="48dp"
+            android:backgroundTint="#00FFFFFF"
+            android:padding="0dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/back_icon" />
+
+        <TextView
+            android:id="@+id/my_closet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="174dp"
+            android:layout_marginTop="48dp"
+            android:fontFamily="@font/manrope_bold"
+            android:text="내 옷장"
+            android:textAlignment="center"
+            android:textColor="#3F3F3F"
+            android:textSize="18sp" />
+
+        <ImageButton
+            android:id="@+id/btnEdit"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="355dp"
+            android:layout_marginTop="48dp"
+            android:backgroundTint="#00FFFFFF"
+            android:padding="0dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/edit_icon" />
+
+        <ImageButton
+            android:id="@+id/btnClickedEdit"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="355dp"
+            android:layout_marginTop="48dp"
+            android:backgroundTint="#00FFFFFF"
+            android:padding="0dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/click_edit_icon"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/btnAll"
+            android:layout_width="50dp"
+            android:layout_height="36dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="93dp"
+            android:fontFamily="@font/manrope_m"
+            android:padding="2dp"
+            android:text="전체"
+            android:backgroundTint="#ffffff"
+            android:textAlignment="center"
+            android:textColor="#3F3F3F"
+            android:textSize="16sp"
+            app:strokeColor="#97D9E1"
+            app:strokeWidth="1dp" />
+
+
+        <Button
+            android:id="@+id/btnOuter"
+            android:layout_width="66dp"
+            android:layout_height="36dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="89dp"
+            android:layout_marginTop="93dp"
+            android:backgroundTint="#9997D9E1"
+            android:fontFamily="@font/manrope_m"
+            android:padding="2dp"
+            android:text="아우터"
+            android:textAlignment="center"
+            android:textColor="#3F3F3F"
+            android:textSize="16sp"
+            app:strokeColor="#97D9E1"
+            app:strokeWidth="1dp" />
+
+        <Button
+            android:id="@+id/btnTop"
+            android:layout_width="50dp"
+            android:layout_height="36dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="168dp"
+            android:layout_marginTop="93dp"
+            android:backgroundTint="#FFFFFF"
+            android:fontFamily="@font/manrope_m"
+            android:padding="2dp"
+            android:textAlignment="center"
+            android:text="상의"
+            android:textColor="#3F3F3F"
+            android:textSize="16sp"
+            app:strokeColor="#97D9E1"
+            app:strokeWidth="1dp" />
+
+        <Button
+            android:id="@+id/btnBottom"
+            android:layout_width="50dp"
+            android:layout_height="36dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="234dp"
+            android:layout_marginTop="93dp"
+            android:backgroundTint="#FFFFFF"
+            android:fontFamily="@font/manrope_m"
+            android:padding="2dp"
+            android:text="하의"
+            android:textAlignment="center"
+            android:textColor="#3F3F3F"
+            android:textSize="16sp"
+            app:strokeColor="#97D9E1"
+            app:strokeWidth="1dp" />
+
+        <Button
+            android:id="@+id/btnSet"
+            android:layout_width="92dp"
+            android:layout_height="36dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="93dp"
+            android:backgroundTint="#FFFFFF"
+            android:fontFamily="@font/manrope_m"
+            android:padding="2dp"
+            android:textAlignment="center"
+            android:text="세트/원피스"
+            android:textColor="#3F3F3F"
+            android:textSize="16sp"
+            app:strokeColor="#97D9E1"
+            app:strokeWidth="1dp" />
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/user"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="150dp"
+        tools:listitem="@layout/clothes_item" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="512dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="461dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

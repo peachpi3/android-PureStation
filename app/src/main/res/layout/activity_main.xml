@@ -1,0 +1,713 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <!-- Auto layout, variables, and unit scale are not yet supported -->
+    <RelativeLayout
+        android:id="@+id/home"
+        android:layout_width="428dp"
+        android:layout_height="927dp"
+        android:clipToOutline="true"
+        android:background="@drawable/gradient"
+        tools:ignore="MissingConstraints,RedundantNamespace,UnusedAttribute">
+
+
+
+        <ImageButton
+            android:id="@+id/user_icon"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="26dp"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="#00FFFFFF"
+            android:padding="0dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/user_icon" />
+
+        <TextView
+            android:id="@+id/tvUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/manrope_sb"
+            android:text="User" />
+
+
+<!--        <ImageButton-->
+<!--            android:id="@+id/alram_icon"-->
+<!--            android:layout_width="30dp"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:layout_alignParentLeft="true"-->
+<!--            android:layout_alignParentTop="true"-->
+<!--            android:layout_marginLeft="307dp"-->
+<!--            android:layout_marginTop="47dp"-->
+<!--            android:backgroundTint="#00FFFFFF"-->
+<!--            android:padding="0dp"-->
+<!--            android:scaleType="fitCenter"-->
+<!--            app:srcCompat="@drawable/alarm_icon" />-->
+
+
+        <ImageButton
+            android:id="@+id/suggestionIcon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="310dp"
+            android:layout_marginTop="46dp"
+            android:backgroundTint="#00FFFFFF"
+            android:padding="0dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/magic_wand" />
+
+        <ImageButton
+            android:id="@+id/closet_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="352dp"
+            android:layout_marginTop="46dp"
+            android:backgroundTint="#00FFFFFF"
+            android:padding="0dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/closet_icon" />
+
+
+        <ImageView
+            android:id="@+id/home_box1"
+            android:layout_width="356dp"
+            android:layout_height="122dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="26dp"
+            android:layout_marginTop="117dp"
+            app:srcCompat="@drawable/home_box1" />
+
+        <ImageView
+            android:id="@+id/weather_icon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="44dp"
+            android:layout_marginTop="150dp"
+            android:clipToOutline="true"
+            app:srcCompat="@drawable/weather_icon" />
+
+        <TextView
+            android:id="@+id/today"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="125dp"
+            android:layout_marginTop="130dp"
+            android:fontFamily="@font/manrope_sb"
+            android:gravity="top"
+            android:text="Loading..."
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/place_icon"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="125dp"
+            android:layout_marginTop="168dp"
+            android:clipToOutline="true"
+            app:srcCompat="@drawable/place_icon" />
+
+        <TextView
+            android:id="@+id/place"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="165dp"
+            android:fontFamily="@font/manrope_m"
+            android:text="Loading..." />
+
+        <TextView
+            android:id="@+id/high_temper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="125dp"
+            android:layout_marginTop="195dp"
+            android:fontFamily="@font/manrope_m"
+            android:gravity="top"
+            android:text="최고 : "
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/high_temper2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="172dp"
+            android:layout_marginTop="195dp"
+            android:fontFamily="@font/manrope_m"
+            android:text="..."
+            android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/lower_temper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="227dp"
+                android:layout_marginTop="195dp"
+                android:fontFamily="@font/manrope_m"
+                android:gravity="top"
+                android:text="최저 : "
+                android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/lower_temper2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="272dp"
+            android:layout_marginTop="195dp"
+            android:fontFamily="@font/manrope_m"
+            android:text="..."
+            android:textSize="16sp" />
+
+<!--        <TextView-->
+<!--            android:id="@+id/recommend"-->
+<!--            android:layout_width="42dp"-->
+<!--            android:layout_height="22dp"-->
+<!--            android:layout_alignParentLeft="true"-->
+<!--            android:layout_alignParentTop="true"-->
+<!--            android:layout_marginLeft="125dp"-->
+<!--            android:layout_marginTop="195dp"-->
+<!--            android:fontFamily="@font/manrope_m"-->
+<!--            android:gravity="top"-->
+<!--            android:text="추천 : "-->
+<!--            android:textSize="16sp" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/recommend2"-->
+<!--            android:layout_width="130dp"-->
+<!--            android:layout_height="25dp"-->
+<!--            android:layout_alignParentLeft="true"-->
+<!--            android:layout_alignParentTop="true"-->
+<!--            android:layout_marginLeft="172dp"-->
+<!--            android:layout_marginTop="195dp"-->
+<!--            android:fontFamily="@font/manrope_m"-->
+<!--            android:gravity="top"-->
+<!--            android:text="Loading..."-->
+<!--            android:textSize="16sp" />-->
+
+
+        <ImageView
+            android:id="@+id/home_box2"
+            android:layout_width="356dp"
+            android:layout_height="306dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="26dp"
+            android:layout_marginTop="259dp"
+            app:srcCompat="@drawable/home_box2" />
+
+        <ImageView
+            android:id="@+id/humi_icon"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="44dp"
+            android:layout_marginTop="269dp"
+            android:clipToOutline="true"
+            app:srcCompat="@drawable/humi_icon" />
+
+        <TextView
+            android:id="@+id/tvHumi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="94dp"
+            android:layout_marginTop="275dp"
+            android:fontFamily="@font/manrope_bold"
+            android:gravity="top"
+            android:text="가습기"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvJum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="145dp"
+            android:layout_marginTop="275dp"
+            android:fontFamily="@font/manrope_bold"
+            android:gravity="top"
+            android:text="•"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvDehumi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="160dp"
+            android:layout_marginTop="275dp"
+            android:fontFamily="@font/manrope_bold"
+            android:gravity="top"
+            android:text="제습기"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/hum_off"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="328dp"
+            android:layout_marginTop="270dp"
+            android:backgroundTint="#00FFFFFF"
+            android:padding="0dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/off_icon" />
+
+        <ImageButton
+            android:id="@+id/hum_on"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="328dp"
+            android:layout_marginTop="270dp"
+            android:backgroundTint="#00FFFFFF"
+            android:padding="0dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/on_icon"
+            android:visibility="gone"/>
+
+
+        <TextView
+            android:id="@+id/now_humi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="106dp"
+            android:layout_marginTop="324dp"
+            android:fontFamily="@font/manrope_m"
+            android:gravity="center_horizontal|top"
+            android:text="현재습도" />
+
+        <TextView
+            android:id="@+id/hum"
+            android:layout_width="86dp"
+            android:layout_height="38dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="91dp"
+            android:layout_marginTop="347dp"
+            android:fontFamily="@font/manrope_sb"
+            android:gravity="center_horizontal|top"
+            android:text="60%"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/now_temper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="247dp"
+            android:layout_marginTop="324dp"
+            android:fontFamily="@font/manrope_m"
+            android:gravity="center_horizontal|top"
+            android:text="현재온도" />
+
+        <TextView
+            android:id="@+id/temp"
+            android:layout_width="86dp"
+            android:layout_height="38dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="234dp"
+            android:layout_marginTop="347dp"
+            android:fontFamily="@font/manrope_sb"
+            android:gravity="center_horizontal|top"
+            android:text="13º"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/per30"
+            android:layout_width="35dp"
+            android:layout_height="16dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="82dp"
+            android:layout_marginTop="412dp"
+            android:fontFamily="@font/manrope_m"
+            android:gravity="center_horizontal|top"
+            android:text="30%"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/per70"
+            android:layout_width="35dp"
+            android:layout_height="16dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="291dp"
+            android:layout_marginTop="412dp"
+            android:fontFamily="@font/manrope_m"
+            android:gravity="center_horizontal|top"
+            android:text="70%"
+            android:textSize="12sp" />
+
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="280dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="64dp"
+            android:layout_marginTop="428dp"
+            android:max="70"
+            android:min="30"
+            android:progressDrawable="@drawable/seekbar"
+            android:thumb="@drawable/seekbar_thumb" />
+
+
+        <TextView
+            android:id="@+id/hope_humi"
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="145dp"
+            android:layout_marginTop="462dp"
+            android:fontFamily="@font/manrope_m"
+            android:gravity="center_horizontal|top"
+            android:text="희망습도 : "
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/seekbar_value"
+            android:layout_width="45dp"
+            android:layout_height="22dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="209dp"
+            android:layout_marginTop="459dp"
+            android:fontFamily="@font/manrope_sb"
+            android:gravity="center_horizontal|top"
+            android:text="50%"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/humState"
+            android:layout_width="45dp"
+            android:layout_height="22dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="494dp"
+            android:fontFamily="@font/manrope_sb"
+            android:gravity="center_horizontal|top"
+            android:text="가습기"
+            android:textColor="#B9B9B9"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/deHumState"
+            android:layout_width="45dp"
+            android:layout_height="22dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="494dp"
+            android:fontFamily="@font/manrope_sb"
+            android:gravity="center_horizontal|top"
+            android:text="제습기"
+            android:textColor="#FFB9B9B9"
+            android:textSize="12sp" />
+
+
+        <ImageView
+            android:id="@+id/noWater"
+            android:layout_width="108dp"
+            android:layout_height="37dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="510dp"
+            android:gravity="center_horizontal|top"
+            app:srcCompat="@drawable/no_water_icon2" />
+
+        <ImageView
+            android:id="@+id/fullWater"
+            android:layout_width="110dp"
+            android:layout_height="37dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="210dp"
+            android:layout_marginTop="510dp"
+            android:gravity="center_horizontal|top"
+            app:srcCompat="@drawable/full_water_icon2" />
+
+
+        <ImageView
+            android:id="@+id/home_box3"
+            android:layout_width="356dp"
+            android:layout_height="191dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="26dp"
+            android:layout_marginTop="585dp"
+            app:srcCompat="@drawable/home_box3" />
+
+        <ImageView
+            android:id="@+id/uv_icon"
+            android:layout_width="38dp"
+            android:layout_height="37dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="44dp"
+            android:layout_marginTop="595dp"
+            android:clipToOutline="true"
+            app:srcCompat="@drawable/uv_icon" />
+
+        <ImageButton
+            android:id="@+id/uv_off"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="328dp"
+            android:layout_marginTop="595dp"
+            android:backgroundTint="#00FFFFFF"
+            android:padding="0dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/off_icon" />
+
+        <ImageButton
+            android:id="@+id/uv_on"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="328dp"
+            android:layout_marginTop="595dp"
+            android:backgroundTint="#00FFFFFF"
+            android:padding="0dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/on_icon"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/uv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="94dp"
+            android:layout_marginTop="600dp"
+            android:fontFamily="@font/manrope_bold"
+            android:gravity="top"
+            android:text="UV 소독 램프"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/start_btn"
+            android:layout_width="79dp"
+            android:layout_height="29dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="165dp"
+            android:layout_marginTop="729dp"
+            android:backgroundTint="#00FFFFFF"
+            android:padding="0dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/start_icon1" />
+
+        <ImageButton
+            android:id="@+id/started"
+            android:layout_width="79dp"
+            android:layout_height="29dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="165dp"
+            android:layout_marginTop="729dp"
+            android:backgroundTint="#00FFFFFF"
+            android:padding="0dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/start_icon2"
+            android:visibility="gone"/>
+
+
+        <!-- 램프 타이머 !! -->
+        <EditText
+            android:id="@+id/hour_et"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="122dp"
+            android:layout_marginTop="664dp"
+            android:fontFamily="@font/manrope_bold"
+            android:hint="hour"
+            android:inputType="number"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/colons_et"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="173dp"
+            android:layout_marginTop="676dp"
+            android:fontFamily="@font/manrope_bold"
+            android:inputType="number"
+            android:text=":"
+            android:textColor="@color/dialogColor"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/minute_et"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="224dp"
+            android:layout_marginTop="664dp"
+            android:fontFamily="@font/manrope_bold"
+            android:hint="min"
+            android:inputType="number"
+            android:textAlignment="center" />
+
+        <!-- ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ -->
+
+        <TextView
+            android:id="@+id/hour_tv"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="673dp"
+            android:fontFamily="@font/manrope_bold"
+            android:hint="00"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="18dp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/colons_tv1"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="127dp"
+            android:layout_marginTop="670dp"
+            android:fontFamily="@font/manrope_bold"
+            android:inputType="number"
+            android:text=":"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/minute_tv"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="174dp"
+            android:layout_marginTop="673dp"
+            android:fontFamily="@font/manrope_bold"
+            android:hint="00"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="18dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/colons_tv2"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="221dp"
+            android:layout_marginTop="670dp"
+            android:fontFamily="@font/manrope_bold"
+            android:inputType="number"
+            android:text=":"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/second_tv"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="268dp"
+            android:layout_marginTop="673dp"
+            android:fontFamily="@font/manrope_bold"
+            android:hint="00"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="18dp"
+            android:visibility="gone"/>
+
+        <!-- ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ -->
+
+        <TextView
+            android:id="@+id/static_tv"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="640dp"
+            android:fontFamily="@font/manrope_bold"
+            android:inputType="number"
+            android:text="작동 시간을 입력해 주세요."
+            android:textAlignment="center"
+            android:textColor="#D9AFD9"
+            android:textSize="18dp" />
+
+
+    </RelativeLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="205dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="445dp" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="left" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

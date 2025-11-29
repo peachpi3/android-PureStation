@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/user"
+        android:layout_width="428dp"
+        android:layout_height="927dp"
+        android:background="@drawable/gradient"
+        android:clipToOutline="true"
+        tools:ignore="MissingConstraints,RedundantNamespace,UnusedAttribute">
+
+
+        <ImageButton
+            android:id="@+id/backIcon"
+            android:layout_width="15dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="48dp"
+            android:backgroundTint="#00FFFFFF"
+            android:padding="0dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/back_icon" />
+
+        <TextView
+            android:id="@+id/tvOutfitSugges"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="156dp"
+            android:layout_marginTop="48dp"
+            android:fontFamily="@font/manrope_bold"
+            android:text="옷차림 추천"
+            android:textAlignment="center"
+            android:textColor="#3F3F3F"
+            android:textSize="18sp" />
+
+
+        <ImageView
+            android:id="@+id/clothBackground1"
+            android:layout_width="316dp"
+            android:layout_height="316dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="46dp"
+            android:layout_marginTop="130dp"
+            app:srcCompat="@drawable/cloth_background" />
+
+        <ImageButton
+            android:id="@+id/previousTop"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="266dp"
+            android:backgroundTint="#00FFFFFF"
+            android:padding="0dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/previous_cloth" />
+
+        <ImageButton
+            android:id="@+id/nextTop"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="317dp"
+            android:layout_marginTop="266dp"
+            android:backgroundTint="#00FFFFFF"
+            android:padding="0dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/next_cloth" />
+
+        <TextView
+            android:id="@+id/tvTop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="114dp"
+            android:layout_marginTop="160dp"
+            android:fontFamily="@font/manrope_bold"
+            android:text="상의 &amp; 아우터 &amp; 원피스"
+            android:textAlignment="center"
+            android:textColor="#3F3F3F"
+            android:textSize="18sp" />
+
+
+        <ImageView
+            android:id="@+id/outfitTop"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="102dp"
+            android:layout_marginTop="198dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/top7" />
+
+        <ImageView
+            android:id="@+id/clothBackground2"
+            android:layout_width="316dp"
+            android:layout_height="316dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="46dp"
+            android:layout_marginTop="456dp"
+            app:srcCompat="@drawable/cloth_background" />
+
+        <ImageButton
+            android:id="@+id/previousBottom"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="594dp"
+            android:backgroundTint="#00FFFFFF"
+            android:padding="0dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/previous_cloth" />
+
+        <ImageButton
+            android:id="@+id/nextBottom"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="317dp"
+            android:layout_marginTop="594dp"
+            android:backgroundTint="#00FFFFFF"
+            android:padding="0dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/next_cloth" />
+
+        <TextView
+            android:id="@+id/tvBottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="148dp"
+            android:layout_marginTop="486dp"
+            android:fontFamily="@font/manrope_bold"
+            android:text="하의 &amp; 스커트"
+            android:textAlignment="center"
+            android:textColor="#3F3F3F"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/outfitBottom"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="102dp"
+            android:layout_marginTop="526dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/bottom1" />
+
+        <android.widget.Button
+            android:id="@+id/btnEndCodi"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="105dp"
+            android:layout_marginTop="780dp"
+            android:background="@drawable/button_draw"
+            android:fontFamily="@font/manrope_bold"
+            android:text="코디 완료"
+            android:textColor="#FFFFFF"
+            android:textColorLink="#00FFFFFF" />
+
+
+    </RelativeLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="205dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/user"
+            android:layout_width="428dp"
+            android:layout_height="927dp"
+            android:background="@drawable/gradient"
+            android:clipToOutline="true"
+            tools:ignore="MissingConstraints,RedundantNamespace,UnusedAttribute">
+
+                <!--        <ImageView-->
+                <!--            android:id="@+id/background"-->
+                <!--            android:layout_width="wrap_content"-->
+                <!--            android:layout_height="wrap_content"-->
+                <!--            app:srcCompat="@drawable/back" />-->
+
+                <ImageButton
+                    android:id="@+id/back_home"
+                    android:layout_width="15dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="48dp"
+                    android:backgroundTint="#00FFFFFF"
+                    android:padding="0dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/back_icon" />
+
+                <TextView
+                    android:id="@+id/clothInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="165dp"
+                    android:layout_marginTop="48dp"
+                    android:fontFamily="@font/manrope_bold"
+                    android:text="상세정보"
+                    android:textAlignment="center"
+                    android:textColor="#3F3F3F"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/clothBackground"
+                    android:layout_width="316dp"
+                    android:layout_height="316dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="46dp"
+                    android:layout_marginTop="96dp"
+                    app:srcCompat="@drawable/cloest_box" />
+
+                <ImageButton
+                    android:id="@+id/clothImg"
+                    android:layout_width="275dp"
+                    android:layout_height="275dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="67dp"
+                    android:layout_marginTop="115dp"
+                    android:backgroundTint="#00FFFFFF"
+                    android:padding="0dp"
+                    android:scaleType="fitCenter" />
+
+                <TextView
+                    android:id="@+id/color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="52dp"
+                    android:layout_marginTop="450dp"
+                    android:fontFamily="@font/manrope_sb"
+                    android:gravity="center_horizontal|top"
+                    android:text="옷 색상"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/colorInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="122dp"
+                    android:layout_marginTop="449dp"
+                    android:fontFamily="@font/manrope_m"
+                    android:gravity="center_horizontal|top"
+                    android:text="흰색, 초록색"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/material"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="61dp"
+                    android:layout_marginTop="485dp"
+                    android:fontFamily="@font/manrope_sb"
+                    android:gravity="center_horizontal|top"
+                    android:text="재질"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/materialInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="122dp"
+                    android:layout_marginTop="484dp"
+                    android:fontFamily="@font/manrope_m"
+                    android:gravity="center_horizontal|top"
+                    android:text="면"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/season"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="61dp"
+                    android:layout_marginTop="525dp"
+                    android:fontFamily="@font/manrope_sb"
+                    android:gravity="center_horizontal|top"
+                    android:text="계절"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/seasonInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="122dp"
+                    android:layout_marginTop="524dp"
+                    android:fontFamily="@font/manrope_m"
+                    android:gravity="center_horizontal|top"
+                    android:text="봄, 여름, 가을"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/line"
+                    android:layout_width="315dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="47dp"
+                    android:layout_marginTop="566dp"
+                    app:srcCompat="@drawable/stroke" />
+
+                <TextView
+                    android:id="@+id/washing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="52dp"
+                    android:layout_marginTop="585dp"
+                    android:fontFamily="@font/manrope_sb"
+                    android:gravity="center_horizontal|top"
+                    android:text="세탁 방법"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/washingInfo"
+                    android:layout_width="315dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="52dp"
+                    android:layout_marginTop="615dp"
+                    android:fontFamily="@font/manrope_m"
+                    android:text="심한 얼룩이 있는 경우 미리 부분 세탁을 합니다.
+                            이후 찬물이나 미지근한 물로 세제를 넣고 세탁을 합니다."
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/caution"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="52dp"
+                    android:layout_marginTop="700dp"
+                    android:fontFamily="@font/manrope_sb"
+                    android:gravity="center_horizontal|top"
+                    android:text="세탁 시 주의사항"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/cautionInfo"
+                    android:layout_width="315dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="52dp"
+                    android:layout_marginTop="730dp"
+                    android:fontFamily="@font/manrope_m"
+                    android:text="탈수를 너무 세게하면 옷이 늘어날 수 있습니다.
+                            세탁할 때 티셔츠를 뒤집으면 색 바램을 줄일 수 있습니다."
+                    android:textSize="16sp" />
+        </RelativeLayout>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="205dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
