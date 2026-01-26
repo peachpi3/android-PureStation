@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/user"
+        android:layout_width="450dp"
+        android:layout_height="950dp"
+        android:clipToOutline="true"
+
+        tools:ignore="MissingConstraints,RedundantNamespace,UnusedAttribute">
+
+        <ImageView
+            android:id="@+id/background"
+            android:layout_width="427dp"
+            android:layout_height="907dp"
+            app:srcCompat="@drawable/back_edit" />
+
+        <ImageButton
+            android:id="@+id/btnClose"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="335dp"
+            android:layout_marginTop="108dp"
+            android:backgroundTint="#00FFFFFF"
+            android:padding="0dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/edit_close" />
+
+        <TextView
+            android:id="@+id/user_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="136dp"
+            android:layout_marginTop="150dp"
+            android:fontFamily="@font/manrope_bold"
+            android:text="사용자 정보 수정"
+            android:textColor="#3F3F3F"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/user_icon2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="166dp"
+            android:layout_marginTop="204dp"
+            app:srcCompat="@drawable/user_icon" />
+
+        <TextView
+            android:id="@+id/id_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="82dp"
+            android:layout_marginTop="352dp"
+            android:fontFamily="@font/manrope_m"
+            android:text="이메일"
+            android:textColor="#3F3F3F" />
+
+        <TextView
+            android:id="@+id/tvEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="354dp"
+            android:fontFamily="@font/manrope_m"
+            android:text="test@gmail.com"
+            android:textColor="#3D3D3D"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/st1"
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="48dp"
+            android:layout_marginTop="381dp"
+            app:srcCompat="@drawable/stroke" />
+
+        <TextView
+            android:id="@+id/pw_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="76dp"
+            android:layout_marginTop="396dp"
+            android:fontFamily="@font/manrope_m"
+            android:text="비밀번호"
+            android:textColor="#3F3F3F" />
+
+        <EditText
+            android:id="@+id/etPasswd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="396dp"
+            android:fontFamily="@font/manrope_m"
+            android:text="********"
+            android:textColor="#808080"
+            android:background="@android:color/transparent"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/st2"
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="48dp"
+            android:layout_marginTop="425dp"
+            app:srcCompat="@drawable/stroke" />
+
+
+        <TextView
+            android:id="@+id/name_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="89dp"
+            android:layout_marginTop="440dp"
+            android:fontFamily="@font/manrope_m"
+            android:text="이름"
+            android:textColor="#3F3F3F" />
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="442dp"
+            android:fontFamily="@font/manrope_m"
+            android:text="김민주"
+            android:textColor="#808080"
+            android:background="@android:color/transparent"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/st3"
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="48dp"
+            android:layout_marginTop="469dp"
+            app:srcCompat="@drawable/stroke" />
+
+        <TextView
+            android:id="@+id/phone_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="68dp"
+            android:layout_marginTop="484dp"
+            android:fontFamily="@font/manrope_m"
+            android:text="휴대폰 번호"
+            android:textColor="#3F3F3F" />
+
+        <EditText
+            android:id="@+id/etPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="486dp"
+            android:fontFamily="@font/manrope_m"
+            android:text="01088392141"
+            android:textColor="#808080"
+            android:background="@android:color/transparent"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/st4"
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="48dp"
+            android:layout_marginTop="513dp"
+            app:srcCompat="@drawable/stroke" />
+
+        <TextView
+            android:id="@+id/arduino_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="62dp"
+            android:layout_marginTop="528dp"
+            android:fontFamily="@font/manrope_m"
+            android:text="기기 고유번호"
+            android:textColor="#3F3F3F" />
+
+        <EditText
+            android:id="@+id/etArduino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="530dp"
+            android:fontFamily="@font/manrope_m"
+            android:text="17XF23Q-EA89M"
+            android:textColor="#808080"
+            android:background="@android:color/transparent"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/st5"
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="48dp"
+            android:layout_marginTop="557dp"
+            app:srcCompat="@drawable/stroke" />
+
+        <TextView
+            android:id="@+id/gender_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="89dp"
+            android:layout_marginTop="572dp"
+            android:fontFamily="@font/manrope_m"
+            android:text="성별"
+            android:textColor="#3F3F3F" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="146dp"
+            android:layout_marginTop="571dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/female"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginEnd="30dp"
+                android:layout_weight="1"
+                android:buttonTint="#E2C2E2"
+                android:fontFamily="@font/manrope_m"
+                android:text="여성"
+                android:textColor="#808080"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/male"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginEnd="20dp"
+                android:layout_weight="1"
+                android:buttonTint="#E2C2E2"
+                android:text="남성"
+                android:textColor="#808080"
+                android:textSize="12sp" />
+        </RadioGroup>
+
+        <android.widget.Button
+            android:id="@+id/btnModify"
+            android:layout_width="265dp"
+            android:layout_height="51dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="72dp"
+            android:layout_marginTop="635dp"
+            android:background="@drawable/button_draw"
+            android:fontFamily="@font/manrope_bold"
+            android:text="수정하기"
+            android:textColor="#FFFFFF"
+            android:textColorLink="#00FFFFFF" />
+
+        <ImageButton
+            android:id="@+id/btnLogout"
+            android:layout_width="120dp"
+            android:layout_height="38dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="144dp"
+            android:layout_marginTop="689dp"
+            android:backgroundTint="#00FFFFFF"
+            android:padding="0dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/logout_btn" />
+
+
+    </RelativeLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="205dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="445dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/user"
+        android:layout_width="428dp"
+        android:layout_height="927dp"
+        android:clipToOutline="true"
+
+        tools:ignore="MissingConstraints,RedundantNamespace,UnusedAttribute"
+>
+
+
+        <ImageView
+            android:id="@+id/main_icon2"
+            android:layout_width="79dp"
+            android:layout_height="82dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="165dp"
+            android:layout_marginTop="252dp"
+            app:srcCompat="@drawable/main_icon" />
+
+
+        <ImageView
+            android:id="@+id/id_icon"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="372dp"
+            app:srcCompat="@drawable/id_icon" />
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="360dp"
+            android:ems="10"
+            android:hint="EMAIL"
+            android:inputType="text"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/pw_icon"
+            android:layout_width="19dp"
+            android:layout_height="18dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="99dp"
+            android:layout_marginTop="405dp"
+            app:srcCompat="@drawable/pw_icon" />
+
+        <EditText
+            android:id="@+id/etPasswd"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="395dp"
+            android:ems="10"
+            android:hint="PASSWORD"
+            android:inputType="textPassword"
+            android:textSize="14sp" />
+
+        <CheckBox
+            android:id="@+id/saveId"
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="125dp"
+            android:layout_marginTop="440dp"
+            android:drawableLeft="@drawable/check"
+            android:button="@android:color/transparent"
+            android:gravity="center_vertical"
+            android:text="아이디 저장"
+            android:textColor="@drawable/check_text"
+            android:textSize="12sp" />
+
+        <CheckBox
+            android:id="@+id/loginMaintain"
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="210dp"
+            android:layout_marginTop="440dp"
+            android:drawableLeft="@drawable/check"
+            android:button="@android:color/transparent"
+            android:text="로그인 유지"
+            android:textColor="@drawable/check_text"
+            android:textSize="12sp" />
+
+        <ImageButton
+            android:id="@+id/btnLogin"
+            android:layout_width="153dp"
+            android:layout_height="29dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="127dp"
+            android:layout_marginTop="488dp"
+            android:backgroundTint="#00FFFFFF"
+            android:button="@android:color/transparent"
+            android:padding="0dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/login_but" />
+
+        <ImageButton
+            android:id="@+id/btnRegister"
+            android:layout_width="153dp"
+            android:layout_height="29dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="127dp"
+            android:layout_marginTop="525dp"
+            android:backgroundTint="#00FFFFFF"
+            android:button="@android:color/transparent"
+            android:padding="0dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/new_but" />
+
+        <TextView
+            android:id="@+id/editTextText2"
+            android:layout_width="125dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="152dp"
+            android:layout_marginTop="565dp"
+            android:ems="10"
+            android:inputType="text"
+            android:text="아이디 / 비밀번호 찾기 >"
+            android:textAlignment="center"
+            android:textSize="12sp" />
+
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

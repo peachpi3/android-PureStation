@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/user"
+        android:layout_width="428dp"
+        android:layout_height="927dp"
+        android:clipToOutline="true"
+
+        tools:ignore="MissingConstraints,RedundantNamespace,UnusedAttribute" >
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="15dp"
+            android:layout_height="30dp"
+            android:backgroundTint="#00FFFFFF"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="48dp"
+            android:padding="0dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/back_icon" />
+
+        <TextView
+            android:id="@+id/register"
+            android:layout_width="70dp"
+            android:layout_height="24dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="170dp"
+            android:layout_marginTop="48dp"
+            android:fontFamily="@font/manrope_bold"
+            android:text="회원가입"
+            android:textColor="#3F3F3F"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="115dp"
+            android:fontFamily="@font/manrope_m"
+            android:gravity="top"
+            android:text="이메일"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="135dp"
+            android:backgroundTint="#cbcbcb"
+            android:ems="10"
+            android:fontFamily="@font/manrope_m"
+            android:hint="이메일 입력"
+            android:inputType="text"
+            android:textColor="#CBCBCB"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/pw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="190dp"
+            android:fontFamily="@font/manrope_m"
+            android:gravity="top"
+            android:text="비밀번호"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/etPasswd"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="210dp"
+            android:backgroundTint="#cbcbcb"
+            android:ems="10"
+            android:fontFamily="@font/manrope_m"
+            android:hint="비밀번호 (문자 포함, 6자리 이상)"
+            android:inputType="textPassword"
+            android:textColor="#CBCBCB"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/pw2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="265dp"
+            android:fontFamily="@font/manrope_m"
+            android:gravity="top"
+            android:text="비밀번호 확인"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/etConPasswd"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="285dp"
+            android:backgroundTint="#cbcbcb"
+            android:ems="10"
+            android:fontFamily="@font/manrope_m"
+            android:hint="비밀번호 확인"
+            android:inputType="textPassword"
+            android:textColor="#CBCBCB"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="340dp"
+            android:fontFamily="@font/manrope_m"
+            android:gravity="top"
+            android:text="이름"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="360dp"
+            android:backgroundTint="#cbcbcb"
+            android:ems="10"
+            android:fontFamily="@font/manrope_m"
+            android:hint="실명을 입력하세요"
+            android:inputType="text"
+            android:textColor="#CBCBCB"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="415dp"
+            android:fontFamily="@font/manrope_m"
+            android:gravity="top"
+            android:text="휴대폰번호"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/etPhone"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="435dp"
+            android:backgroundTint="#cbcbcb"
+            android:ems="10"
+            android:fontFamily="@font/manrope_m"
+            android:hint="‘-’ 구분없이 입력"
+            android:inputType="number"
+            android:textColor="#CBCBCB"
+            android:textSize="14sp"
+            android:maxLength="11"/>
+
+        <TextView
+            android:id="@+id/arduinoId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="490dp"
+            android:fontFamily="@font/manrope_m"
+            android:gravity="top"
+            android:text="기기 고유번호"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/etArduinoId"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="510dp"
+            android:backgroundTint="#cbcbcb"
+            android:ems="10"
+            android:fontFamily="@font/manrope_m"
+            android:hint="예) 17XF23Q-EA89M"
+            android:inputType="text"
+            android:textColor="#CBCBCB"
+            android:textSize="14sp"
+            android:maxLength="13"/>
+
+        <TextView
+            android:id="@+id/gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="565dp"
+            android:fontFamily="@font/manrope_m"
+            android:gravity="top"
+            android:text="성별"
+            android:textSize="16sp" />
+
+
+        <RadioGroup
+            android:id="@id/gender"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="595dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/female"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginEnd="30dp"
+                android:layout_weight="1"
+                android:buttonTint="#E2C2E2"
+                android:theme="@style/CustomRadioButton"
+                android:text="여성"
+                android:textColor="#3F3F3F"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/male"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginEnd="20dp"
+                android:layout_weight="1"
+                android:buttonTint="#E2C2E2"
+                android:theme="@style/CustomRadioButton"
+                android:fontFamily="@font/manrope_m"
+                android:text="남성"
+                android:textColor="#3F3F3F"
+                android:textSize="12sp" />
+        </RadioGroup>
+
+
+        <android.widget.Button
+            android:id="@+id/ok_join"
+            android:layout_width="265dp"
+            android:layout_height="51dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="68dp"
+            android:layout_marginTop="660dp"
+            android:background="@drawable/button_draw"
+            android:fontFamily="@font/manrope_bold"
+            android:text="회원가입 완료"
+            android:textColor="#FFFFFF"
+            android:textColorLink="#00FFFFFF"
+            android:textSize="14sp" />
+
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
